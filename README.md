@@ -3,7 +3,7 @@
 Par Alyson Shane et John Luxford. Basé sur uMario_Jakowski, un clone de Mario
 en C++/SDL2 par Łukasz Jakowski.
 
---
+---
 
 Author: Łukasz Jakowski
 
