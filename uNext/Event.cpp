@@ -211,20 +211,20 @@ void Event::Normal() {
 						vOLDLength[stepID] -= iSpeed;
 						break;
 					case eBOSSTEXT1:
-						CCore::getMap()->addText(vOLDLength[stepID], CCFG::GAME_HEIGHT - 16 - 9*32, "THANK YOU MARIOz");
+						CCore::getMap()->addText(vOLDLength[stepID], CCFG::GAME_HEIGHT - 16 - 9*32, "MERCI GUYz");
 						vOLDLength[stepID] = 0;
 						break;
 					case eBOSSTEXT2:
-						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 7*32, "BUT OUR PRINCESS IS IN");
-						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 6*32, "ANOTHER CASTLEz");
+						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 7*32, "MAIS TA BLONDE EST DANS");
+						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 6*32, "UN AUTRE CHATEAUz");
 						vOLDLength[stepID] = 0;
 						break;
 					case eENDGAMEBOSSTEXT1:
-						CCore::getMap()->addText(vOLDLength[stepID], CCFG::GAME_HEIGHT - 16 - 9*32, "THANK YOU MARIOz");
+						CCore::getMap()->addText(vOLDLength[stepID], CCFG::GAME_HEIGHT - 16 - 9*32, "MERCI GUYz");
 						vOLDLength[stepID] = 0;
 						break;
 					case eENDGAMEBOSSTEXT2:
-						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 7*32, "YOUR QUEST IS OVER.");
+						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 7*32, "TA QUETE EST FINIE.");
 						vOLDLength[stepID] = 0;
 						break;
 					case eMARIOSPRITE1:
