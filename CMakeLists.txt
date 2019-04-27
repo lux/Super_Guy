@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.6)
-project(uMario)
+project(Super_Guy)
 
 # Use our modified FindSDL2* modules
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${uMario_SOURCE_DIR}/cmake")
-set(BIN_DIR ${uMario_SOURCE_DIR}/bin)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${Super_Guy_SOURCE_DIR}/cmake")
+set(BIN_DIR ${Super_Guy_SOURCE_DIR}/bin)
 
 # Bump up warning levels appropriately for clang, gcc & msvc and build in debug mode
 if (${CMAKE_CXX_COMPILER_ID} STREQUAL "GNU" OR ${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
@@ -27,9 +27,9 @@ file(COPY uNext/files DESTINATION .)
 
 include_directories(uNext)
 
-file(GLOB_RECURSE uMario_SOURCES "uNext/*.cpp")
-add_executable (uMario ${uMario_SOURCES})
+file(GLOB_RECURSE Super_Guy_SOURCES "uNext/*.cpp")
+add_executable (Super_Guy ${Super_Guy_SOURCES})
 
-target_link_libraries(uMario ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_MIXER_LIBRARY})
+target_link_libraries(Super_Guy ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_MIXER_LIBRARY})
 
-install(TARGETS uMario RUNTIME DESTINATION ${BIN_DIR})
+install(TARGETS Super_Guy RUNTIME DESTINATION ${BIN_DIR})

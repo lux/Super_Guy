@@ -21,7 +21,7 @@ debug_ninja: mkdir_build
 	ninja -C build
 
 run:
-	cd build; ./uMario
+	cd build; ./Super_Guy
 
 
 .PHONY: mkdir_build
