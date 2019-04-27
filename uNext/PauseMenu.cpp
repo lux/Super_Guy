@@ -10,11 +10,11 @@ PauseMenu::PauseMenu(void) {
 	rPause.w = 360;
 	rPause.h = 142;
 
-	this->lMO.push_back(new MenuOption("RESUME", 0, 156));
+	this->lMO.push_back(new MenuOption("REPRENDRE", 0, 156));
 	this->lMO.push_back(new MenuOption("OPTIONS", 0, 180));
 
-	this->lMO.push_back(new MenuOption("QUIT TO MENU", 0, 228));
-	this->lMO.push_back(new MenuOption("QUIT TO DESKTOP", 0, 252));
+	this->lMO.push_back(new MenuOption("QUITTER AU MENU", 0, 228));
+	this->lMO.push_back(new MenuOption("QUITTER AU BUREAU", 0, 252));
 
 	this->numOfMenuOptions = lMO.size();
 }

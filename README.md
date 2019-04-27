@@ -1,5 +1,9 @@
-# uMario_Jakowski
-uMario C++/SDL2 Game by Łukasz Jakowski
+# Les Frères Super Guy
+
+Par Alyson Shane et John Luxford. Basé sur uMario_Jakowski, un clone de Mario
+en C++/SDL2 par Łukasz Jakowski.
+
+--
 
 Author: Łukasz Jakowski
 
