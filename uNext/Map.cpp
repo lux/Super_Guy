@@ -425,7 +425,7 @@ void Map::DrawMinions(SDL_Renderer* rR) {
 }
 
 void Map::DrawGameLayout(SDL_Renderer* rR) {
-	CCFG::getText()->Draw(rR, "MARIO", 54, 16);
+	CCFG::getText()->Draw(rR, "GUY", 54, 16);
 
 	if(oPlayer->getScore() < 100) {
 		CCFG::getText()->Draw(rR, "00000" + std::to_string(oPlayer->getScore()), 54, 32);
@@ -439,7 +439,7 @@ void Map::DrawGameLayout(SDL_Renderer* rR) {
 		CCFG::getText()->Draw(rR, std::to_string(oPlayer->getScore()), 54, 32);
 	}
 
-	CCFG::getText()->Draw(rR, "WORLD", 462, 16);
+	CCFG::getText()->Draw(rR, "MONDE", 462, 16);
 	CCFG::getText()->Draw(rR, getLevelName(), 480, 32);
 
 	if(iLevelType != 1) {
@@ -450,7 +450,7 @@ void Map::DrawGameLayout(SDL_Renderer* rR) {
 	CCFG::getText()->Draw(rR, "y", 286, 32);
 	CCFG::getText()->Draw(rR, (oPlayer->getCoins() < 10 ? "0" : "") + std::to_string(oPlayer->getCoins()), 302, 32);
 
-	CCFG::getText()->Draw(rR, "TIME", 672, 16);
+	CCFG::getText()->Draw(rR, "TEMPS", 672, 16);
 	if(CCFG::getMM()->getViewID() == CCFG::getMM()->eGame) {
 		if(iMapTime > 100) {
 			CCFG::getText()->Draw(rR, std::to_string(iMapTime), 680, 32);

@@ -11,13 +11,13 @@ OptionsMenu::OptionsMenu(void) {
 	rRect.h = 324;
 
 	this->lMO.push_back(new MenuOption("VOLUME", 73, 65));
-	this->lMO.push_back(new MenuOption("LEFT", 73, 89));
-	this->lMO.push_back(new MenuOption("DOWN", 73, 113));
-	this->lMO.push_back(new MenuOption("RIGHT", 73, 137));
-	this->lMO.push_back(new MenuOption("JUMP", 73, 161));
-	this->lMO.push_back(new MenuOption("RUN", 73, 185));
-	this->lMO.push_back(new MenuOption("CAN MOVE BACKWARD", 73, 209));
-	this->lMO.push_back(new MenuOption("MAIN MENU", 73, 257));
+	this->lMO.push_back(new MenuOption("GAUCHE", 73, 89));
+	this->lMO.push_back(new MenuOption("BAS", 73, 113));
+	this->lMO.push_back(new MenuOption("DROITE", 73, 137));
+	this->lMO.push_back(new MenuOption("SAUT", 73, 161));
+	this->lMO.push_back(new MenuOption("COURIR", 73, 185));
+	this->lMO.push_back(new MenuOption("PEUT RECULER", 73, 209));
+	this->lMO.push_back(new MenuOption("MENU PRINCIPAL", 73, 257));
 
 	this->numOfMenuOptions = lMO.size();
 
@@ -97,7 +97,7 @@ void OptionsMenu::Draw(SDL_Renderer* rR) {
 	CCFG::getText()->Draw(rR, CCFG::getKeyString(CCFG::keyIDSpace), 185, 161, 16, activeMenuOption == 4 ? 255 : 90, activeMenuOption == 4 ? 255 : 90, activeMenuOption == 4 ? 255 : 90);
 	CCFG::getText()->Draw(rR, CCFG::getKeyString(CCFG::keyIDShift), 185, 185, 16, activeMenuOption == 5 ? 255 : 90, activeMenuOption == 5 ? 255 : 90, activeMenuOption == 5 ? 255 : 90);
 
-	CCFG::getText()->Draw(rR, CCFG::canMoveBackward ? "TRUE" : "FALSE", 357, 209, 16, activeMenuOption == 6 ? 255 : 90, activeMenuOption == 6 ? 255 : 90, activeMenuOption == 6 ? 255 : 90);
+	CCFG::getText()->Draw(rR, CCFG::canMoveBackward ? "OUI" : "NON", 357, 209, 16, activeMenuOption == 6 ? 255 : 90, activeMenuOption == 6 ? 255 : 90, activeMenuOption == 6 ? 255 : 90);
 
 	if(inSetKey) {
 		SDL_SetRenderDrawColor(rR, 20, 20, 20, 245);
@@ -113,8 +113,8 @@ void OptionsMenu::Draw(SDL_Renderer* rR) {
 		rSetKeyRect.h += 2;
 		rSetKeyRect.w += 2;
 
-		CCFG::getText()->Draw(rR, "PRESS KEY FOR " + lMO[activeMenuOption]->getText(), 92, rSetKeyRect.y + 16, 16, 255, 255, 255);
-		CCFG::getText()->Draw(rR, "PRESS ESC TO CANCEL", 92, rSetKeyRect.y + 40, 16, 255, 255, 255);
+		CCFG::getText()->Draw(rR, "APPUYER SUR POUR " + lMO[activeMenuOption]->getText(), 92, rSetKeyRect.y + 16, 16, 255, 255, 255);
+		CCFG::getText()->Draw(rR, "APPUYER SUR ESC POUR ANNULER", 92, rSetKeyRect.y + 40, 16, 255, 255, 255);
 	}
 
 	SDL_SetRenderDrawBlendMode(rR, SDL_BLENDMODE_NONE);

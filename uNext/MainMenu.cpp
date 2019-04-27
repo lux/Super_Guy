@@ -5,9 +5,9 @@
 /* ******************************************** */
 
 MainMenu::MainMenu(void) {
-	this->lMO.push_back(new MenuOption("1 PLAYER GAME", 178, 276));
+	this->lMO.push_back(new MenuOption("1 JOUEUR", 178, 276));
 	this->lMO.push_back(new MenuOption("OPTIONS", 222, 308));
-	this->lMO.push_back(new MenuOption("ABOUT", 237, 340));
+	this->lMO.push_back(new MenuOption("A PROPOS", 237, 340));
 
 	this->numOfMenuOptions = lMO.size();
 
@@ -54,7 +54,7 @@ void MainMenu::Draw(SDL_Renderer* rR) {
 		rSelectWorld.h += 2;
 		rSelectWorld.w += 2;
 
-		CCFG::getText()->Draw(rR, "SELECT WORLD", rSelectWorld.x + rSelectWorld.w/2 - CCFG::getText()->getTextWidth("SELECT WORLD")/2, rSelectWorld.y + 16, 16, 255, 255, 255);
+		CCFG::getText()->Draw(rR, "CHOISIR LE MONDE", rSelectWorld.x + rSelectWorld.w/2 - CCFG::getText()->getTextWidth("CHOISIR LE MONDE")/2, rSelectWorld.y + 16, 16, 255, 255, 255);
 
 		for(int i = 0, extraX = 0; i < 8; i++) {
 			if(i == activeWorldID) {
