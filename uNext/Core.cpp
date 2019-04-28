@@ -67,11 +67,11 @@ CCore::CCore(void) {
 
 	this->mouseX = this->mouseY = 0;
 
-	CCFG::keyIDA = SDLK_a;
-	CCFG::keyIDS = SDLK_s;
-	CCFG::keyIDD = SDLK_d;
-	CCFG::keyIDSpace = SDLK_SPACE;
-	CCFG::keyIDShift = SDLK_LSHIFT;
+	CCFG::keyIDA = SDLK_LEFT;
+	CCFG::keyIDS = SDLK_DOWN;
+	CCFG::keyIDD = SDLK_RIGHT;
+	CCFG::keyIDSpace = SDLK_PERIOD;
+	CCFG::keyIDShift = SDLK_SLASH;
 }
 
 CCore::~CCore(void) {
@@ -149,7 +149,7 @@ void CCore::InputMenu() {
 					keyMenuPressed = true;
 				}
 				break;
-			case SDLK_KP_ENTER: case SDLK_RETURN:
+			case SDLK_PERIOD: case SDLK_KP_ENTER: case SDLK_RETURN:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->enter();
 					keyMenuPressed = true;
@@ -232,7 +232,7 @@ void CCore::InputPlayer() {
 				}
 			}
 		switch(mainEvent->key.keysym.sym) {
-			case SDLK_KP_ENTER: case SDLK_RETURN: case SDLK_ESCAPE:
+			case SDLK_PERIOD: case SDLK_KP_ENTER: case SDLK_RETURN: case SDLK_ESCAPE:
 				keyMenuPressed = false;
 				break;
 		}
@@ -275,7 +275,7 @@ void CCore::InputPlayer() {
 		}
 
 		switch(mainEvent->key.keysym.sym) {
-			case SDLK_KP_ENTER: case SDLK_RETURN:
+			case SDLK_PERIOD: case SDLK_KP_ENTER: case SDLK_RETURN:
 				if(!keyMenuPressed) {
 					CCFG::getMM()->enter();
 					keyMenuPressed = true;

@@ -155,7 +155,7 @@ void OptionsMenu::escape() {
 }
 
 void OptionsMenu::setKey(int keyID) {
-	if(inSetKey && keyID != SDLK_KP_ENTER && keyID != SDLK_RETURN && keyID != SDLK_ESCAPE) {
+	if(inSetKey && keyID != SDLK_SPACE && keyID != SDLK_KP_ENTER && keyID != SDLK_RETURN && keyID != SDLK_ESCAPE) {
 		switch(activeMenuOption) {
 			case 1:
 				CCFG::keyIDA = keyID;

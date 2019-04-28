@@ -79,6 +79,10 @@ std::string CCFG::getKeyString(int keyID) {
 			return "LCTRL";
 		case SDLK_RCTRL:
 			return "RCTRL";
+		case SDLK_PERIOD:
+			return ".";
+		case SDLK_SLASH:
+			return "/";
 	}
 
 	return "RIEN";
