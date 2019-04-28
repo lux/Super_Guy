@@ -32,11 +32,13 @@ CCore::CCore(void) {
 
 	SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_AUDIO);
 	
-	window = SDL_CreateWindow("Les Frères Super Guy", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, CCFG::GAME_WIDTH, CCFG::GAME_HEIGHT, SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow("Les Frères Super Guy", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, CCFG::GAME_WIDTH, CCFG::GAME_HEIGHT, SDL_WINDOW_FULLSCREEN);
 
 	if(window == NULL) {
 		quitGame = true;
 	}
+
+	SDL_ShowCursor(SDL_DISABLE);
 
 	rR = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
