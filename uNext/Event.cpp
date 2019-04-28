@@ -216,7 +216,7 @@ void Event::Normal() {
 						break;
 					case eBOSSTEXT2:
 						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 7*32, "MAIS TA BLONDE EST DANS");
-						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 6*32, "UN AUTRE CHATEAUz");
+						CCore::getMap()->addText(vOLDLength[stepID] + 16, CCFG::GAME_HEIGHT - 16 - 6*32, "UN AUTRE FORTz");
 						vOLDLength[stepID] = 0;
 						break;
 					case eENDGAMEBOSSTEXT1:
