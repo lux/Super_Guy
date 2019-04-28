@@ -4114,7 +4114,7 @@ void Map::loadLVL_1_2() {
 	vPlatform.push_back(new Platform(6, 1, 154*32 + 16, 154*32 + 16, -32, CCFG::GAME_HEIGHT + 32, 154*32 + 16, 10*32, true));
 	vPlatform.push_back(new Platform(6, 1, 154*32 + 16, 154*32 + 16, -32, CCFG::GAME_HEIGHT + 32, 154*32 + 16, 2*32, true));
 
-	vLevelText.push_back(new LevelText(178*32, CCFG::GAME_HEIGHT - 16 - 8*32, "WELCOME TO WARP ZONEz"));
+	vLevelText.push_back(new LevelText(178*32, CCFG::GAME_HEIGHT - 16 - 8*32, "BIENVENUE AU WARP ZONEz"));
 
 	vLevelText.push_back(new LevelText(178*32 + 16, CCFG::GAME_HEIGHT - 6*32, "4"));
 	vLevelText.push_back(new LevelText(182*32 + 16, CCFG::GAME_HEIGHT - 6*32, "3"));
@@ -5802,7 +5802,7 @@ void Map::loadLVL_4_2() {
 	vPlatform.push_back(new Platform(6, 0, 156*32, 156*32, -32, CCFG::GAME_HEIGHT + 32, 156*32, 9*32 + 16, true));
 	vPlatform.push_back(new Platform(6, 0, 156*32, 156*32, -32, CCFG::GAME_HEIGHT + 32, 156*32, 1*32 + 16, true));
 
-	vLevelText.push_back(new LevelText(210*32, CCFG::GAME_HEIGHT - 16 - 8*32, "WELCOME TO WARP ZONEz"));
+	vLevelText.push_back(new LevelText(210*32, CCFG::GAME_HEIGHT - 16 - 8*32, "BIENVENUE AU WARP ZONEz"));
 
 	vLevelText.push_back(new LevelText(214*32 + 16, CCFG::GAME_HEIGHT - 6*32, "5"));
 
@@ -5884,7 +5884,7 @@ void Map::loadLVL_4_2() {
 	structCoins(340, 11, 5, 1);
 	structCoins(345, 5, 2, 1);
 
-	vLevelText.push_back(new LevelText(360*32, CCFG::GAME_HEIGHT - 16 - 8*32, "WELCOME TO WARP ZONEz"));
+	vLevelText.push_back(new LevelText(360*32, CCFG::GAME_HEIGHT - 16 - 8*32, "BIENVENUE AU WARP ZONEz"));
 
 	vLevelText.push_back(new LevelText(360*32 + 16, CCFG::GAME_HEIGHT - 6*32, "8"));
 	vLevelText.push_back(new LevelText(364*32 + 16, CCFG::GAME_HEIGHT - 6*32, "7"));
