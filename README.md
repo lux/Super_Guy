@@ -1,5 +1,7 @@
 # Les Frères Super Guy
 
+![Les Frères Super Guy](https://raw.githubusercontent.com/lux/Super_Guy/master/les-freres-super-guy.png)
+
 Par Alyson Shane et John Luxford. Basé sur uMario_Jakowski, un clone de Mario
 en C++/SDL2 par Łukasz Jakowski.
 
