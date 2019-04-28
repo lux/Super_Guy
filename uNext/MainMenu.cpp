@@ -111,7 +111,11 @@ void MainMenu::enter() {
 }
 
 void MainMenu::escape() {
-	selectWorld = false;
+	if (selectWorld) {
+		selectWorld = false;
+	} else {
+		CCore::quitGame = true;
+	}
 }
 
 void MainMenu::updateActiveButton(int iDir) {
