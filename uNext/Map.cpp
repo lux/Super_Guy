@@ -3932,7 +3932,7 @@ void Map::loadLVL_1_1() {
 
 	// ----- Clouds -----
 
-	structCloud(8, 10, 1);
+	structCloud(3, 10, 1);
 	structCloud(19, 11, 1);
 	structCloud(27, 10, 3);
 	structCloud(36, 11, 2);
