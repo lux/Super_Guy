@@ -5,7 +5,19 @@
 Par Alyson Shane et John Luxford. Basé sur uMario_Jakowski, un clone de Mario
 en C++/SDL2 par Łukasz Jakowski.
 
+La musique
+
+* [Alouette](https://en.wikipedia.org/wiki/Alouette_(song))
+* [Gens du pays](https://en.wikipedia.org/wiki/Gens_du_pays)
+* [Log driver's waltz](https://www.youtube.com/watch?v=upsZZ2s3xv8)
+* [Sur le pont d'avignon](https://en.wikipedia.org/wiki/Sur_le_Pont_d%27Avignon)
+* [V'la l'bon vent](https://www.thecanadianencyclopedia.ca/en/article/vla-lbon-vent-emc)
+
+Tabarnak par [Bob Gratton](https://www.youtube.com/watch?v=MIFvgSCzg4E).
+
 ---
+
+## uMario_Jakowski
 
 Author: Łukasz Jakowski
 

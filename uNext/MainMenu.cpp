@@ -34,7 +34,7 @@ void MainMenu::Update() {
 }
 
 void MainMenu::Draw(SDL_Renderer* rR) {
-	CCFG::getSMBLOGO()->Draw(rR, 230, 48);
+	CCFG::getSMBLOGO()->Draw(rR, 230, 52);
 	Menu::Draw(rR);
 	CCFG::getText()->Draw(rR, "WWW.LUKASZJAKOWSKI.PL", 4, CCFG::GAME_HEIGHT - 4 - 8, 8, 0, 0, 0);
 	CCFG::getText()->Draw(rR, "WWW.LUKASZJAKOWSKI.PL", 5, CCFG::GAME_HEIGHT - 5 - 8, 8, 255, 255, 255);
