@@ -11,7 +11,7 @@ Map::Map(void) {
 }
 
 Map::Map(SDL_Renderer* rR) {
-	oPlayer = new Player(rR, 84, 368);
+	oPlayer = new Player(rR, 84, 520);
 
 	this->currentLevelID = 0;
 

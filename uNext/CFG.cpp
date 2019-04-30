@@ -13,7 +13,7 @@ CCFG::~CCFG(void) {
 /* ******************************************** */
 
 int CCFG::GAME_WIDTH  = 800;
-int CCFG::GAME_HEIGHT = 448; //600;
+int CCFG::GAME_HEIGHT = 600; //448;
 
 Text* CCFG::oText = new Text();
 CIMG* CCFG::tSMBLOGO = new CIMG();

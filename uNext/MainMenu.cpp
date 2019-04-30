@@ -5,15 +5,15 @@
 /* ******************************************** */
 
 MainMenu::MainMenu(void) {
-	this->lMO.push_back(new MenuOption("1 JOUEUR", 178, 276));
-	this->lMO.push_back(new MenuOption("OPTIONS", 222, 308));
-	this->lMO.push_back(new MenuOption("A PROPOS", 237, 340));
+	this->lMO.push_back(new MenuOption("1 JOUEUR", 345, 296));
+	this->lMO.push_back(new MenuOption("OPTIONS", 345, 328));
+	this->lMO.push_back(new MenuOption("A PROPOS", 345, 360));
 
 	this->numOfMenuOptions = lMO.size();
 
 	this->selectWorld = false;
 
-	rSelectWorld.x = 122;
+	rSelectWorld.x = 252;
 	rSelectWorld.y = 280;
 	rSelectWorld.w = 306;
 	rSelectWorld.h = 72;
@@ -34,7 +34,7 @@ void MainMenu::Update() {
 }
 
 void MainMenu::Draw(SDL_Renderer* rR) {
-	CCFG::getSMBLOGO()->Draw(rR, 80, 48);
+	CCFG::getSMBLOGO()->Draw(rR, 230, 48);
 	Menu::Draw(rR);
 	CCFG::getText()->Draw(rR, "WWW.LUKASZJAKOWSKI.PL", 4, CCFG::GAME_HEIGHT - 4 - 8, 8, 0, 0, 0);
 	CCFG::getText()->Draw(rR, "WWW.LUKASZJAKOWSKI.PL", 5, CCFG::GAME_HEIGHT - 5 - 8, 8, 255, 255, 255);
