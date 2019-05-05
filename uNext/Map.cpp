@@ -2457,32 +2457,32 @@ std::string Map::getLevelName() {
 void Map::loadMinionsLVL_1_1() {
 	clearMinions();
 
-	addGoombas(704, 368, true);
+	addGoombas(704, 368 + 152, true);
 
-	addGoombas(1280, 368, true);
+	addGoombas(1280, 368 + 152, true);
 
-	addGoombas(1632, 368, true);
-	addGoombas(1680, 368, true);
+	addGoombas(1632, 368 + 152, true);
+	addGoombas(1680, 368 + 152, true);
 
-	addGoombas(2560, 112, true);
-	addGoombas(2624, 112, true);
+	addGoombas(2560, 112 + 152, true);
+	addGoombas(2624, 112 + 152, true);
 
-	addGoombas(3104, 368, true);
-	addGoombas(3152, 368, true);
+	addGoombas(3104, 368 + 152, true);
+	addGoombas(3152, 368 + 152, true);
 
-	addKoppa(107*32, 368, 1, true);
+	addKoppa(107*32, 368 + 152, 1, true);
 
-	addGoombas(3648, 368, true);
-	addGoombas(3696, 368, true);
+	addGoombas(3648, 368 + 152, true);
+	addGoombas(3696, 368 + 152, true);
 
-	addGoombas(3968, 368, true);
-	addGoombas(4016, 368, true);
+	addGoombas(3968, 368 + 152, true);
+	addGoombas(4016, 368 + 152, true);
 
-	addGoombas(4096, 368, true);
-	addGoombas(4144, 368, true);
+	addGoombas(4096, 368 + 152, true);
+	addGoombas(4144, 368 + 152, true);
 
-	addGoombas(5568, 368, true);
-	addGoombas(5612, 368, true);
+	addGoombas(5568, 368 + 152, true);
+	addGoombas(5612, 368 + 152, true);
 }
 
 void Map::loadMinionsLVL_1_2() {
@@ -2490,36 +2490,36 @@ void Map::loadMinionsLVL_1_2() {
 
 	this->iLevelType = 1;
 
-	addGoombas(16*32, 368, true);
-	addGoombas(17*32 + 8, 368 - 32, true);
+	addGoombas(16*32, 368 + 152, true);
+	addGoombas(17*32 + 8, 368 - 32 + 152, true);
 
-	addGoombas(29*32, 368, true);
+	addGoombas(29*32, 368 + 152, true);
 
-	addKoppa(44*32, 368, 1, true);
-	addKoppa(45*32 + 16, 368, 1, true);
+	addKoppa(44*32, 368 + 152, 1, true);
+	addKoppa(45*32 + 16, 368 + 152, 1, true);
 
-	addKoppa(59*32, 368, 1, true);
+	addKoppa(59*32, 368 + 152, 1, true);
 
-	addGoombas(62*32, 368, true);
-	addGoombas(64*32, 368, true);
+	addGoombas(62*32, 368 + 152, true);
+	addGoombas(64*32, 368 + 152, true);
 
-	addGoombas(73*32, 368 - 8*32, true);
+	addGoombas(73*32, 368 - (8*32) + 152, true);
 
-	addGoombas(76*32, 368 - 4*32, true);
-	addGoombas(77*32 + 16, 368 - 4*32, true);
+	addGoombas(76*32, 368 - (4*32) + 152, true);
+	addGoombas(77*32 + 16, 368 - (4*32) + 152, true);
 
-	addGoombas(99*32, 368, true);
-	addGoombas(100*32 + 16, 368, true);
-	addGoombas(102*32, 368, true);
+	addGoombas(99*32, 368 + 152, true);
+	addGoombas(100*32 + 16, 368 + 152, true);
+	addGoombas(102*32, 368 + 152, true);
 
-	addGoombas(113*32, 368, true);
+	addGoombas(113*32, 368 + 152, true);
 
-	addGoombas(135*32, 368 - 3*32, true);
-	addGoombas(136*32 + 16, 368 - 4*32, true);
+	addGoombas(135*32, 368 - (3*32) + 152, true);
+	addGoombas(136*32 + 16, 368 - (4*32) + 152, true);
 
 	this->iLevelType = 3;
 
-	addKoppa(146*32, 368, 1, false);
+	addKoppa(146*32, 368 + 152, 1, false);
 
 	this->iLevelType = 1;
 	addPlant(103*32 + 16, CCFG::GAME_HEIGHT - 10 - 4*32);
@@ -10009,7 +10009,7 @@ void Map::structEnd(int X, int Y, int iHeight) {
 		lMap[X][Y + i]->setBlockID(iLevelType == 4 ? 123 : 40);
 	}
 
-	oFlag = new Flag(X*32 - 16, Y + iHeight + 72);
+	oFlag = new Flag(X*32 - 16, Y + iHeight + 72 + 152);
 
 	lMap[X][Y + iHeight]->setBlockID(iLevelType == 4 ? 124 : 41);
 
