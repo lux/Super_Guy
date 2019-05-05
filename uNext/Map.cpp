@@ -3614,7 +3614,7 @@ int Map::getSpawnPointYPos(int iID) {
 					return CCFG::GAME_HEIGHT - 48 - oPlayer->getHitBoxY();;
 			}
 		case 3: case 7: case 11: case 15: case 19: case 23: case 27: case 31:
-			return 150;
+			return 150 + 152;
 	}
 
 	return CCFG::GAME_HEIGHT - 48 - oPlayer->getHitBoxY();
